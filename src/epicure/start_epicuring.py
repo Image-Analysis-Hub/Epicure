@@ -240,7 +240,7 @@ def gui_files( raw_movie=None, raw_movie_path="", segmented=None ):
             print(e)
             return
         ut.show_progress( viewer, False )
-        segname = str(get_files.image_file.value)+"_epyseg.tif"
+        segname = str(raw_movie_path)+"_epyseg.tif"
         ut.writeTif( segres, segname, 1.0, "uint8", what="Epyseg results saved in " )
         get_files.segmentation_file.value = segname
         get_files.segment_with_epyseg.visible = False
