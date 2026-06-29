@@ -1,13 +1,11 @@
 import napari
 from napari import current_viewer
 from magicgui import magicgui
-from napari.utils.history import get_save_history, update_save_history 
+from napari.utils.history import get_save_history 
 import pathlib
 import epicure.Utils as ut
 import numpy as np
 import os
-import pandas as pd
-from epicure.laptrack_centroids import LaptrackCentroids
 from skimage.measure import regionprops_table
 
 from epicure.epicuring import EpiCure

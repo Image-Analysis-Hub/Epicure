@@ -18,16 +18,16 @@ def test_epicuring_bindings( make_napari_viewer ):
     ut.set_active_layer(epic.viewer, "Segmentation")
     view = epic.viewer.window.qt_viewer
     view.canvas.events.key_press(key=keys.Key("b"), modifiers=[])
-    assert epic.viewer.layers["Segmentation"].visible == False
+    assert not epic.viewer.layers["Segmentation"].visible
     view.canvas.events.key_press(key=keys.Key("b"), modifiers=[])
-    assert epic.viewer.layers["Segmentation"].visible == True
+    assert epic.viewer.layers["Segmentation"].visible
     view.canvas.events.key_press(key=keys.Key("v"), modifiers=[])
-    assert epic.viewer.layers["Movie"].visible == False
+    assert not epic.viewer.layers["Movie"].visible
     view.canvas.events.key_press(key=keys.Key("v"), modifiers=[])
-    assert epic.viewer.layers["Movie"].visible == True
+    assert epic.viewer.layers["Movie"].visible
     view.canvas.events.key_press(key=keys.Key("c"), modifiers=[])
-    assert epic.viewer.layers["Movie"].visible == True
-    assert epic.viewer.layers["Segmentation"].visible == False
+    assert epic.viewer.layers["Movie"].visible 
+    assert not epic.viewer.layers["Segmentation"].visible
     view.canvas.events.key_press(key=keys.Key("g"), modifiers=[])
     assert "EpicGrid" in epic.viewer.layers
     

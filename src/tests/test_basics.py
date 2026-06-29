@@ -31,7 +31,6 @@ def test_load_image( make_napari_viewer ):
 def test_load_movie_with_chanel( make_napari_viewer ):
     """ Read a tif movie with 2 channels """
     test_img = os.path.join(".", "test_data", "area3_Composite.tif")
-    test_seg = os.path.join(".", "test_data", "area3_Composite_epyseg.tif")
     viewer = make_napari_viewer()
     epic = epi.EpiCure( viewer )
     resaxis, resval = epic.load_movie(test_img)

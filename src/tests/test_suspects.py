@@ -1,7 +1,5 @@
-import numpy as np
 import os
 import epicure.epicuring as epi
-import epicure.Utils as ut
 #from unittest.mock import Mock
 #from vispy import keys
 import napari
