@@ -5,6 +5,7 @@
 [![Python Version](https://img.shields.io/pypi/pyversions/epicure.svg?color=green)](https://python.org)
 [![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/epicure)](https://napari-hub.org/plugins/epicure)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13952184.svg)](https://doi.org/10.5281/zenodo.13952184)
+[![Tests](https://github.com/Image-Analysis-Hub/Epicure/actions/workflows/cross-platform.yml/badge.svg)]
 
 
 <img src=https://github.com/Image-Analysis-Hub/Epicure/blob/main/docs/imgs/epicure_logo.png caption="EpiCure logo" align="left"/> 
