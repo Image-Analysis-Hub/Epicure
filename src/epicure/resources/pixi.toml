@@ -13,6 +13,7 @@ pip = "*"
 setuptools = ">=65.0" 
 cmake = ">=4.3.0,<5"
 wheel = ">=0.46.3,<0.47"
+llvmlite = "*"
 
 [pypi-dependencies]
 napari-epyseg = "==0.0.14"
