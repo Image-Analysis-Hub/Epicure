@@ -1,6 +1,8 @@
 """
     **EpiCure main class.**
 
+    Organizes all the different parts, handles the raw movie and segmentation.
+
     Open and initialize the files.
     Launch the main widget composed of the segmentation and tracking editing features.
     This class handles the metadata and do the hub between the different objects/classes. 
@@ -9,6 +11,7 @@
     The metadata are stored in the `epi_metadata` object.
     The raw movie is linked in the `self.movie` attribute.
     The napari viewer referenced by `self.viewer` handles all the layers that are displayed.
+    
     EpiCure's main parts are organized similarly to the Tab widgets in the interface, with main objects: `edits` to handle segmentation editions, `tracking` for tracking options and handling of the tracking graph and informations, `outputs` to perform analyses or export to other format, `display` for displaying options, `inspecting` to look for potential segmentation errors and handles cellular events (division, extruxion, suspect segmentation).
 """
 import numpy as np
