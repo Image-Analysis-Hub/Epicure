@@ -10,7 +10,7 @@
 
 <img src=https://github.com/Image-Analysis-Hub/Epicure/blob/main/docs/imgs/epicure_logo.png caption="EpiCure logo" align="left"/> 
 </br></br>
-<p align="center"><b>Napari plugin to ease manual correction of epithelia segmentation in movies.</b></p>
+<p align="center"><b>Napari plugin to ease manual correction of epithelia segmentation in movies</b></p>
 </br></br>
 
 To analyse individual cell trajectory from epithelia movies marked for cell-cell junctions, a very precise segmentation and tracking is required.
