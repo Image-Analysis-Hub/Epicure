@@ -1,5 +1,6 @@
 import appose
 import numpy as np
+import epicure.Utils as ut
 import logging
 from importlib import resources
 import platform
@@ -22,7 +23,11 @@ def go_epyseg( image, parameters, progress_bar=None, logger=None ):
         ## get cuda installation if Linux or Windows (tensorflow with cuda)
         is_gpu_platform = platform.system() in ("Linux", "Windows")
         env_name = "cuda" if is_gpu_platform else "default"
-        env = env.environment(env_name).build()
+        if ut.version_above(appose, '0.11'):
+            env = env.build()
+            env = env.activate(env_name)
+        else:
+            env = env.environment(env_name).build()
         _logger.info(f"Environment built at: {env.base()}")
         _logger.info( "Initiate environment to run epyseg" )
         python = env.python().init("import numpy as np; import napari_epyseg; from napari_epyseg.call_epyseg import run_epyseg")

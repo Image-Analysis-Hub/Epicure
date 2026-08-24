@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "epicure"
-version = "1.6.3"
+version = "1.6.4"
 description = "Napari plugin to manually correct epithelia segmentation in movies"
 license.file = "LICENSE"
 readme = "README.md"
@@ -45,7 +45,7 @@ dependencies = [
     "laptrack>=0.15.0",
     "joblib",
     "appose",
-    	"geff",
+    "geff",
 ]
 
 [project.optional-dependencies]
