@@ -53,9 +53,8 @@ Refer to the [documentation](https://image-analysis-hub.github.io/Epicure/) for 
 
 ## References
 
-If you use EpiCure, thank you for citing our work: 
+If you use EpiCure, thank you for citing our work: Gaëlle Letort, Léo Valon, Arthur Michaut, Tom Cumming, Laura Xénard, Minh-Son Phan, Nicolas Dray, Curtis T. Rueden, François Schweisguth, Jérôme Gros, Laure Bally-Cuif, Jean-Yves Tinevez, Romain Levayer; EpiCure (Epithelial Curation): a versatile and handy tool for curation of epithelial segmentation. Development 2026; dev.205701. [doi: https://doi.org/10.1242/dev.205701](https://journals.biologists.com/dev/article/doi/10.1242/dev.205701/372491/EpiCure-Epithelial-Curation-a-versatile-and-handy)
 
-EpiCure is not published yet, you can cite it using Zenodo for now: https://doi.org/10.5281/zenodo.13952184
 
 ### Dataset
 
