@@ -1,0 +1,1580 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://gletort.github.io/Epicure/Tutorials/">
+      
+      
+        <link rel="prev" href="../Segment-option/">
+      
+      
+        <link rel="next" href="../api/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Tutorials - EpiCure Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M64%20480c-35.3%200-64-28.7-64-64V96c0-35.3%2028.7-64%2064-64h320c35.3%200%2064%2028.7%2064%2064v213.5c0%2017-6.7%2033.3-18.7%2045.3L322.7%20461.3c-12%2012-28.3%2018.7-45.3%2018.7zm325.5-176H296c-13.3%200-24%2010.7-24%2024v93.5z%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M32%2064C14.3%2064%200%2078.3%200%2096s14.3%2032%2032%2032h86.7c12.3%2028.3%2040.5%2048%2073.3%2048s61-19.7%2073.3-48H480c17.7%200%2032-14.3%2032-32s-14.3-32-32-32H265.3C253%2035.7%20224.8%2016%20192%2016s-61%2019.7-73.3%2048zm0%20160c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032h246.7c12.3%2028.3%2040.5%2048%2073.3%2048s61-19.7%2073.3-48H480c17.7%200%2032-14.3%2032-32s-14.3-32-32-32h-54.7c-12.3-28.3-40.5-48-73.3-48s-61%2019.7-73.3%2048zm0%20160c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032h54.7c12.3%2028.3%2040.5%2048%2073.3%2048s61-19.7%2073.3-48H480c17.7%200%2032-14.3%2032-32s-14.3-32-32-32H233.3c-12.3-28.3-40.5-48-73.3-48s-61%2019.7-73.3%2048z%22/%3E%3C/svg%3E');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M224%200c35.3%200%2064%2021.5%2064%2048%200%2010.4-4.4%2020-12%2027.9-6.6%206.9-12%2015.3-12%2024.9%200%2015%2012.2%2027.2%2027.2%2027.2H336c26.5%200%2048%2021.5%2048%2048v44.8c0%2015%2012.2%2027.2%2027.2%2027.2%209.5%200%2018-5.4%2024.9-12%207.9-7.5%2017.5-12%2027.9-12%2026.5%200%2048%2028.7%2048%2064s-21.5%2064-48%2064c-10.4%200-20.1-4.4-27.9-12-6.9-6.6-15.3-12-24.9-12-15%200-27.2%2012.2-27.2%2027.2V464c0%2026.5-21.5%2048-48%2048h-56.8c-12.8%200-23.2-10.4-23.2-23.2%200-9.2%205.8-17.3%2013.2-22.8%2011.6-8.7%2018.8-20.7%2018.8-34%200-26.5-28.7-48-64-48s-64%2021.5-64%2048c0%2013.3%207.2%2025.3%2018.8%2034%207.4%205.5%2013.2%2013.5%2013.2%2022.8%200%2012.8-10.4%2023.2-23.2%2023.2H48c-26.5%200-48-21.5-48-48V343.2C0%20330.4%2010.4%20320%2023.2%20320c9.2%200%2017.3%205.8%2022.8%2013.2%208.7%2011.6%2020.7%2018.8%2034%2018.8%2026.5%200%2048-28.7%2048-64s-21.5-64-48-64c-13.3%200-25.3%207.2-34%2018.8-5.5%207.4-13.5%2013.2-22.8%2013.2C10.4%20256%200%20245.6%200%20232.8V176c0-26.5%2021.5-48%2048-48h108.8c15%200%2027.2-12.2%2027.2-27.2%200-9.5-5.4-18-12-24.9-7.5-7.9-12-17.5-12-27.9%200-26.5%2028.7-48%2064-48%22/%3E%3C/svg%3E');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20576%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M192%2096c0-53%2043-96%2096-96s96%2043%2096%2096v3.6c0%2015.7-12.7%2028.4-28.4%2028.4H220.5c-15.7%200-28.4-12.7-28.4-28.4V96zm345.6%2012.8c10.6%2014.1%207.7%2034.2-6.4%2044.8l-97.8%2073.3c5.3%208.9%209.3%2018.7%2011.8%2029.1H544c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032h-96v32c0%202.6-.1%205.3-.2%207.9l83.4%2062.5c14.1%2010.6%2017%2030.7%206.4%2044.8s-30.7%2017-44.8%206.4l-63.1-47.3c-23.2%2044.2-66.5%2076.2-117.7%2083.9V280c0-13.3-10.7-24-24-24s-24%2010.7-24%2024v230.2c-51.2-7.7-94.5-39.7-117.7-83.9l-63.1%2047.3c-14.1%2010.6-34.2%207.7-44.8-6.4s-7.7-34.2%206.4-44.8l83.4-62.5c-.1-2.6-.2-5.2-.2-7.9v-32H32c-17.7%200-32-14.3-32-32s14.3-32%2032-32h98.8c2.5-10.4%206.5-20.2%2011.8-29.1l-97.8-73.3c-14.1-10.6-17-30.7-6.4-44.8s30.7-17%2044.8-6.4L192%20184c12.3-5.1%2025.8-8%2040-8h112c14.2%200%2027.7%202.8%2040%208l108.8-81.6c14.1-10.6%2034.2-7.7%2044.8%206.4%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20576%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M64%2064C28.7%2064%200%2092.7%200%20128v256c0%2035.3%2028.7%2064%2064%2064h448c35.3%200%2064-28.7%2064-64V128c0-35.3-28.7-64-64-64zm16%2064h32c8.8%200%2016%207.2%2016%2016v32c0%208.8-7.2%2016-16%2016H80c-8.8%200-16-7.2-16-16v-32c0-8.8%207.2-16%2016-16M64%20240c0-8.8%207.2-16%2016-16h32c8.8%200%2016%207.2%2016%2016v32c0%208.8-7.2%2016-16%2016H80c-8.8%200-16-7.2-16-16zm112-112h32c8.8%200%2016%207.2%2016%2016v32c0%208.8-7.2%2016-16%2016h-32c-8.8%200-16-7.2-16-16v-32c0-8.8%207.2-16%2016-16m-16%20112c0-8.8%207.2-16%2016-16h32c8.8%200%2016%207.2%2016%2016v32c0%208.8-7.2%2016-16%2016h-32c-8.8%200-16-7.2-16-16zm16%2080h224c8.8%200%2016%207.2%2016%2016v32c0%208.8-7.2%2016-16%2016H176c-8.8%200-16-7.2-16-16v-32c0-8.8%207.2-16%2016-16m80-176c0-8.8%207.2-16%2016-16h32c8.8%200%2016%207.2%2016%2016v32c0%208.8-7.2%2016-16%2016h-32c-8.8%200-16-7.2-16-16zm16%2080h32c8.8%200%2016%207.2%2016%2016v32c0%208.8-7.2%2016-16%2016h-32c-8.8%200-16-7.2-16-16v-32c0-8.8%207.2-16%2016-16m80-80c0-8.8%207.2-16%2016-16h32c8.8%200%2016%207.2%2016%2016v32c0%208.8-7.2%2016-16%2016h-32c-8.8%200-16-7.2-16-16zm16%2080h32c8.8%200%2016%207.2%2016%2016v32c0%208.8-7.2%2016-16%2016h-32c-8.8%200-16-7.2-16-16v-32c0-8.8%207.2-16%2016-16m80-80c0-8.8%207.2-16%2016-16h32c8.8%200%2016%207.2%2016%2016v32c0%208.8-7.2%2016-16%2016h-32c-8.8%200-16-7.2-16-16zm16%2080h32c8.8%200%2016%207.2%2016%2016v32c0%208.8-7.2%2016-16%2016h-32c-8.8%200-16-7.2-16-16v-32c0-8.8%207.2-16%2016-16%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%200c14.7%200%2028.2%208.1%2035.2%2021l216%20400c6.7%2012.4%206.4%2027.4-.8%2039.5S486.1%20480%20472%20480H40c-14.1%200-27.2-7.4-34.4-19.5s-7.5-27.1-.8-39.5l216-400c7-12.9%2020.5-21%2035.2-21m0%20352a32%2032%200%201%200%200%2064%2032%2032%200%201%200%200-64m0-192c-18.2%200-32.7%2015.5-31.4%2033.7l7.4%20104c.9%2012.5%2011.4%2022.3%2023.9%2022.3%2012.6%200%2023-9.7%2023.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z%22/%3E%3C/svg%3E');}</style>
+
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2020c-4.41%200-8-3.59-8-8s3.59-8%208-8%208%203.59%208%208-3.59%208-8%208m0-18A10%2010%200%200%200%202%2012a10%2010%200%200%200%2010%2010%2010%2010%200%200%200%2010-10A10%2010%200%200%200%2012%202m1%205h-2v4H7v2h4v4h2v-4h4v-2h-4z%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#a-correct-segmentation-and-tracking-results-from-trackmate" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="EpiCure Documentation" class="md-header__button md-logo" aria-label="EpiCure Documentation" data-md-component="logo">
+      
+  <img src="../imgs/epicure_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            EpiCure Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tutorials
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="dark-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/gletort/Epicure/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Installation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Installation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Start-epicure/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Start EpiCure
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Edit/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Edit
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Inspect/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inspect
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Track/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Track
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Output/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Output
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Display/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Display
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Preferences/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Preferences
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Concatenate-epicured-movies/" class="md-tabs__link">
+          
+  
+  
+  Additionnal options
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tutorials
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../api/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Code documentation
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="EpiCure Documentation" class="md-nav__button md-logo" aria-label="EpiCure Documentation" data-md-component="logo">
+      
+  <img src="../imgs/epicure_logo.png" alt="logo">
+
+    </a>
+    EpiCure Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/gletort/Epicure/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Start-epicure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Start EpiCure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Edit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Inspect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inspect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Track/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Track
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Output/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Output
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Display/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Display
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Preferences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preferences
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additionnal options
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Additionnal options
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Concatenate-epicured-movies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concatenate movies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Segment-option/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Segment option
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-correct-segmentation-and-tracking-results-from-trackmate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A - Correct segmentation and tracking results from TrackMate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A - Correct segmentation and tracking results from TrackMate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a1-load-the-raw-movie-and-trackmate-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A1 - Load the raw movie and TrackMate file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a2-detect-potential-segmentation-or-tracking-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A2 - Detect potential segmentation or tracking errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a3-check-manually-and-correct-true-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A3 - Check manually and correct true errors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A3 - Check manually and correct true errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a3a-navigate-through-the-potential-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A3a - Navigate through the potential errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a3b-correct-true-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A3b - Correct true errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-segment-track-and-measure-a-tissue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B - Segment, track and measure a tissue
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B - Segment, track and measure a tissue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#b1-load-and-segment-the-raw-movie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B1 - Load and segment the raw movie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b2-track-the-cells" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B2 - Track the cells
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B2 - Track the cells">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#b2a-remove-cells-from-the-first-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B2a - Remove cells from the first frame
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b2b-track-the-cells" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B2b - Track the cells
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b3-measure-track-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B3 - Measure track properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-correct-a-binary-segmentation-skeleton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C - Correct a binary segmentation (skeleton)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C - Correct a binary segmentation (skeleton)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c1-load-and-track-the-cells" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C1 - Load and track the cells
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C1 - Load and track the cells">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c1a-load-raw-movie-and-binary-segmentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C1a - Load raw movie and binary segmentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c2a-remove-border-cells" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C2a - Remove border cells
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c3a-track-cells" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C3a - Track cells
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c2-correct-segmentation-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C2 - Correct segmentation errors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C2 - Correct segmentation errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c2a-detect-potential-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C2a - Detect potential errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c2b-correct-wrongly-merged-cells-by-splitting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C2b - Correct wrongly merged cells by splitting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c2c-correct-wrongly-splitted-cell-by-merging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C2c - Correct wrongly splitted cell by merging
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c3-export-the-skeleton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C3 - Export the skeleton
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Tutorials</h1>
+
+<h2 id="a-correct-segmentation-and-tracking-results-from-trackmate">A - Correct segmentation and tracking results from TrackMate</h2>
+<p>This tutorial gives an example on how to correct the segmentation and tracking results obtained after using TrackMate on an epithelia movie.</p>
+<p>You can follow it with your own data, or using the test data available in the github repository, selecting the movie <a href="https://github.com/Image-Analysis-Hub/Epicure/blob/main/test_data/013_crop.tif">013_crop.tif</a> and the corresponding TrackMate file <a href="https://github.com/Image-Analysis-Hub/Epicure/blob/main/test_data/013_crop_witherrors.xml">013_crop_witherrrors.xml</a>.</p>
+<h3 id="a1-load-the-raw-movie-and-trackmate-file">A1 - Load the raw movie and TrackMate file</h3>
+<p>Start Napari, and then EpiCure by going to <code>Plugins&gt;Epicure&gt;Start epicure</code>.</p>
+<p>A panel opens in the right side, where you can select the raw movie by clicking the <code>Select file</code> button on the top right.
+Chosse the raw movie (<code>013_crop.tif</code>).</p>
+<p>The movie is loaded and the metadata are read and displayed in the right panel. 
+Check that the extracted values are correct, or change them if necessary.</p>
+<p><img alt="Starting interface" src="../imgs/tuto_import_tm.png" /></p>
+<p>Then to load the TrackMate results, select the <code>.xml</code> file (<code>013_crop_witherrrors.xml</code>) in the <code>segmentation_file</code> parameter of the interface and click on <code>Start cure</code>.</p>
+<p>The segmentation and tracking information will be loaded. 
+The cells are displayed as labels (colors).
+Each track correspond to one label (color).</p>
+<h3 id="a2-detect-potential-segmentation-or-tracking-errors">A2 - Detect potential segmentation or tracking errors</h3>
+<p>You can navigate through the movie to find segmentation errors, or use the automatic function to highlight potential errors.</p>
+<p>For this, go the the <code>Inspect</code> tab of the right panel.
+In <code>Track options</code>, select <code>Flag track merging</code>, <code>Flag track apparition</code> and <code>Flag track disparition</code>.
+Select <code>Ignore cells on: tissue boundaries</code> at the top of the panel to avoid the border effect and don't check track apparition or disparition for cells at the border. </p>
+<p><img alt="Inspect interface" src="../imgs/tuto_inspect.png" /></p>
+<p>Pontential errors are indicated with white cross on the position of the error, which can be due to segmentation or tracking.</p>
+<h3 id="a3-check-manually-and-correct-true-errors">A3 - Check manually and correct true errors</h3>
+<h4 id="a3a-navigate-through-the-potential-errors">A3a - Navigate through the potential errors</h4>
+<p>To go through all detected errors, press <kbd>Space</kbd>.
+It will move to the position of a first error and zoom on it.
+On your Terminal window, a message indicating why this point was flagged has potentially erroneous is printed.
+Each time you press <kbd>Space</kbd>, it will go to the next error.</p>
+<h4 id="a3b-correct-true-errors">A3b - Correct true errors</h4>
+<p>Go to the two errors at frame 5 toward the bottom of the movie (see figure below).
+You can see that the cell present at frame 4 is wrongly splitted in two cells at frame 5 and detected again as one cell in frame 6. </p>
+<p><img alt="Correct steps" src="../imgs/tuto_import_correction.png" /></p>
+<p>To correct this, at frame 5, press <kbd>Control</kbd> (<kbd>Command</kbd> on MacOS) and click with the left mouse button from the first to the second cell to merge together.
+The two cells will be merged as one cell, labelled with the previous cell (from frame 4) number as the program tries to automatically relink the cells.</p>
+<p>It will also try to relink the cells in the next frame.
+Here, you can see that it didn't work and the next frame cell is not linked to the new cell and has another label (color).
+To correct, that press <kbd>t</kbd> and do a left click on the cell at frame 5 then a right click on the same cell at frame 6 to link them together.</p>
+<p>The error has been corrected.
+You can remove the flags by pressing <kbd>Control+Alt</kbd> (<kbd>Command+Option</kbd> on MacOS) and right clicking on the cross if you want to clean it while correcting, otherwise you can do all the corrections then inspect again to reset them all and check that all is fine.</p>
+<h2 id="b-segment-track-and-measure-a-tissue">B - Segment, track and measure a tissue</h2>
+<h3 id="b1-load-and-segment-the-raw-movie">B1 - Load and segment the raw movie</h3>
+<p>For this tutorial, you can download the raw movie <code>015.tif</code> from the <a href="https://zenodo.org/records/7586394">zenodo repository 7586394</a> which contains movies of drosophila notum development. 
+Click <a href="https://zenodo.org/records/7586394/files/015.tif?download=1">here to download the movie</a></p>
+<p>Start napari.
+Go to <code>EpiCure&gt;Start EpiCure</code>.
+At the top of the parameter interface at the right side of the napari window, choose the movie to process by clicking <code>Select file</code> on the <code>image file</code> parameter.
+Browse to select the file that you downloaded.</p>
+<p>Click <code>Segment now with EpySeg</code> to segment it.
+The segmentation takes few minutes if you have a GPU, longer otherwise.</p>
+<div class="admonition note">
+<p class="admonition-title">First run takes longer to install epyseg environement</p>
+<p>To segment within EpiCure, you can use Epyseg, that is limited to python 3.10 and relies tensorflow. To avoid possible conflict and not limit epicure to python 3.10, EpiCure creates another virtual environement for epyseg thanks to <a href="https://github.com/apposed/appose">Appose</a>. The first time you use this option, it will take more time as it has to install the new environement.</p>
+</div>
+<p>When the segmentation is finished, a file named <code>015.tif_epyseg.tif</code> has been saved in the same folder as your movie and is directly proposed as the <code>segmentation file</code> in EpiCure interface. </p>
+<p><img alt="Start interface" src="../imgs/tuto_track_starting.png" /></p>
+<p>Click <code>START CURE</code> to start the process.</p>
+<h3 id="b2-track-the-cells">B2 - Track the cells</h3>
+<p>EpiCure creates cells from the binary segmentation results from EpySeg. </p>
+<p>Press <kbd>Control-C</kbd> (<kbd>Command-C</kbd> on MacOS) two times to display the cells as contours only, and not full colored cell, to see better the signal behind. 
+Note that if you press <kbd>Control-D</kbd> (<kbd>Command-D</kbd> on MacOS), you can decrease the cell contour size and get back to the fully colored cell when the contour reaches 0. </p>
+<div class="admonition note">
+<p class="admonition-title">The <code>Segmentation</code> layer must always be selected in the left panel for the shortcuts to work</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">You can save the current display settings in <code>Display</code> to use it as default display</p>
+<p>To save the current display settings (eg cells as contours, not full), go to <code>Display</code> panel and click <code>Set current settings as default</code>. Now when you open EpiCure it will use these settings as default visualization.</p>
+</div>
+<p>You can see that on the first frame, the segmentation is very bad as the signal is very noisy, but we get good results in all the other frames.
+Let's first delete all cells from the first frame to clean the segmenation.</p>
+<h4 id="b2a-remove-cells-from-the-first-frame">B2a - Remove cells from the first frame</h4>
+<p>Go to the <code>Edit</code> panel, and select the <code>ROI options</code> interface.
+It will expand the interface for this option (ROI=Region Of Interest).
+Click <code>Draw/Select ROI</code> and select the rectangular selection in the top left panel interface that corresponds to the options linked to the <code>ROIs</code> layer.
+Draw a rectangle around the all image.</p>
+<p><img alt="ROI interface" src="../imgs/tuto_track_roing.png" /></p>
+<p>Click <code>Remove cells inside ROI</code> to delete all the cells inside the rectangle.
+Check that <code>Segmentation</code> layer is the currently selected layer again when all cells are removed.
+Save the correction by pressing <kbd>s</kbd>.</p>
+<h4 id="b2b-track-the-cells">B2b - Track the cells</h4>
+<p>Select the <code>Track</code> panel in the right side interface to choose the options for tracking.</p>
+<p>Select <code>Laptrack-Centroids</code>.
+This option will track the cell by considering the position of their centroids and matching closest points in consecutive frames.</p>
+<p>set <code>Max distance</code> to 20, <code>Splitting cutoff</code> (division probability) to 0.3 and <code>Merging cutoff</code> to 0 (track merging, this should not happen in an epithelia).</p>
+<p>Unselect <code>Add feature cost</code>.
+This could be used to add constraint on the tracking algorithm to try to match cells with similar area or shape in consecutive frames.
+It can improve the tracking when cell shapes are close enough from one frame to another. </p>
+<p>Click <code>Track</code> to launch the tracking.</p>
+<div class="admonition note">
+<p class="admonition-title">Set up tracking parameters on a subset of frames</p>
+<p>You can check the box <code>Track only some frames</code> and set the values of <code>Track from frame</code> and <code>Until frame</code> to perform tracking only on a few frames, to set up the parameters before to track the entire movie.</p>
+</div>
+<p>When the tracking is done, the cells will be colored with a unique color all along the same track.
+The <code>Track</code> layer shows you the track as lines accross frames.
+You can directly show it or hide it by pressing <kbd>r</kbd> when the <code>Segmentation</code> layer is selected.</p>
+<p><img alt="Tracking results" src="../imgs/tuto_track_tracks.png" /></p>
+<p>A few divisions should have been detected by the tracking algorithm, you can see them as blue dots.</p>
+<h3 id="b3-measure-track-properties">B3 - Measure track properties</h3>
+<p>After doing the tracking, you can inspect and correct eventual segmentation or tracking errors.
+When this is done or if you don't need a perfect accuracy for your analysis, you can then perform measurement on the results directly in EpiCure.</p>
+<p>To measure track properties, go to <code>Output</code> and select <code>Measure track features</code>.
+Select <code>All cells</code> in <code>Apply on</code> parameter to measure all tracks at once.
+Click <code>Track features table</code> to launch the measurement.</p>
+<p>A table with one cell/track by row will be displayed in the right-side interface.
+Each column is a measured feature, as eg the total length of a track or its average velocity.</p>
+<p><img alt="Measure table" src="../imgs/tuto_track_measur.png" /></p>
+<h2 id="c-correct-a-binary-segmentation-skeleton">C - Correct a binary segmentation (skeleton)</h2>
+<p>This tutorial gives an example on how to load a binary segmentation, track the cells and correct the initial segmentation.</p>
+<p>You can follow it with your own data, or using the test data available in the github repository, selecting the movie <a href="https://github.com/Image-Analysis-Hub/Epicure/blob/main/test_data/area3_Composite.tif">area3_Composite.tif</a> and the corresponding segmentation (binary of the skeleton) <a href="https://github.com/Image-Analysis-Hub/Epicure/blob/main/test_data/area3_Composite_epyseg.tif">area3_Composite_epyseg.tif</a>.</p>
+<h3 id="c1-load-and-track-the-cells">C1 - Load and track the cells</h3>
+<p>Start Napari, and then EpiCure by going to <code>Plugins&gt;Epicure&gt;Start epicure</code>.</p>
+<h4 id="c1a-load-raw-movie-and-binary-segmentation">C1a - Load raw movie and binary segmentation</h4>
+<p>A panel opens in the right side, where you can select the raw movie by clicking the <code>Select file</code> button on the top right.
+Chosse the raw movie (<code>area3_Composite.tif</code>).</p>
+<p>The movie is loaded and the metadata are read and displayed in the right panel. 
+Check that the extracted values are correct, or change them if necessary.</p>
+<p>Here, the raw movie is a Composite movie (there are two stainings in the same movie).
+Each color channel is loaded as a separated layer in napari, that you can see on the bottom left of the interface.
+The layer that will be analysed by EpiCure will be called <code>Movie</code> and the other layers are called <code>MovieChannel_i</code> where i is the number of the channel in the raw movie.
+In this example, the channel that contains the junction staining is the channel <code>1</code> and channel <code>0</code> (used by default) contains nuclei.
+Then, set the parameter <code>junction_chanel</code> in the right side interface to <code>1</code>, so that the visible layer called <code>Movie</code> now contains the correct staining.</p>
+<p><img alt="Starting interface" src="../imgs/tuto_corr_starting.png" /></p>
+<p>Then to load the segmentation, select the <code>area3_Composite_epyseg.tif</code> file in the <code>segmentation_file</code> parameter of the interface and click on <code>Start cure</code>.</p>
+<p>The segmentation (a binary skeleton) will be transformed to a set of full cells, displayed as colors (labels).</p>
+<h4 id="c2a-remove-border-cells">C2a - Remove border cells</h4>
+<p>The cell that touch the border of the image are not entirely visible and are often disappearing/appearing and a source of errors.
+They can either be ignored in the processing or flag as border cells in the output table, or they can also be removed from the segmentation.</p>
+<p>To remove cells that touch the border of the image, go to <code>Edit</code> panel and select the <code>Cleaning options</code> feature.
+You can choose to remove the cells that are less than <code>x</code> pixels away from the border, where <code>x</code> is 1 by default (touching the border of the image) but could be increased if you want to remove more cells.
+Click <code>Remove border cells</code> to get rid of these cells.</p>
+<p><img alt="Removing border cells" src="../imgs/tuto_corr_rming.png" /></p>
+<h4 id="c3a-track-cells">C3a - Track cells</h4>
+<p>To track the cells to help detect segmentation errors, go the <code>Track</code> panel and select <code>Laptrack-Overlaps</code>.</p>
+<p>Set <code>Min IOU</code> to 0.1: this controls the minimum overlap between segmented cells from two consevutive frames to be allowed to be linked as the same cells.
+Set <code>Splitting cost</code> to 0 to don't allow any division and <code>Merging cost</code> to 0 to not allow any merging of cells.</p>
+<p>Click <code>Track</code>.</p>
+<p>When it is finished, each cell is colored by its track and the <code>Tracks</code> layer contains lines to show the local trajectory of the cell. 
+You can show/hide this layer by pressing <kbd>r</kbd>.</p>
+<p><img alt="Tracking cells" src="../imgs/tuto_corr_tracking.png" /></p>
+<h3 id="c2-correct-segmentation-errors">C2 - Correct segmentation errors</h3>
+<h4 id="c2a-detect-potential-errors">C2a - Detect potential errors</h4>
+<p>To automatically find potential segmentation errors, go the <code>Inspect</code> panel.
+At this step, there should be no events (no suspects, no division, no extrusion), except if you used different parameters in the Tracking step.</p>
+<p>Check the <code>Track options</code> feature, and unselect all options if some are selected.</p>
+<p>Here, we will detect cell that have a sudden change of size.
+For this, check the <code>Size variation</code> parameter, and set to <code>1</code>, so that cell that have a change of area of at least once their size will be flagged.</p>
+<p>Click on <code>Inspect track</code>, you should obtain 3 suspects, toward the end of the movie.
+Press <kbd>Space</kbd> to navigate through these suspects point: the program will zoom on each suspect and display in the Terminal why each point was flagged as suspect.</p>
+<h4 id="c2b-correct-wrongly-merged-cells-by-splitting">C2b - Correct wrongly merged cells by splitting</h4>
+<p>If you check the two first suspects, you can see that they are raised by the same segmentation error that is the wrong segmentation of two cells (at frame 2 and 4) as one cell at frame 3.</p>
+<p>To split the cell in two, go to frame 3, press <kbd>Alt</kbd> (<kbd>Option</kbd> on MacOS) and by keeping the right button of the mouse clicked, draw the separation line between the two cells.
+When you release the mouse button, two cells should apear. </p>
+<p>The central cell should have been correctly relinked with the cell before and after.
+The second cell is not correctly relinked as you can see that in frame 3, a very small cell has been detected as this missing cell. </p>
+<p>To unlink it to this track, press <kbd>t</kbd> to switch to track edition. 
+Press <kbd>Shift</kbd> and do a right click on the small cell to unlink it to the previous cell and start a new track with this cell.</p>
+<p>To now link the second cell that was wrongly linked to this small cell at frame 3, press <kbd>t</kbd> again to go to track edition mode.
+Do a left click on the cell at frame 3 to link with the same cell at frame 3 by doing a right click on it.
+Do the same to link the cell again from frame 3 to frame 4 (press <kbd>t</kbd> then left and right click on the cell on each frame).</p>
+<p><img alt="Correct split" src="../imgs/tuto_corr_sone.png" /></p>
+<p>Go to <code>Track</code> panel and click on <code>Update tracks display</code> to update the <code>Tracks</code> layer with the changes made in this correction step.
+Remove the corresponding suspects if some are left (should be automatically removed) by pressing <kbd>Control+Alt</kbd> (<kbd>Command+Option</kbd> on MacOS) and doing a right click on the suspect point. </p>
+<p>The suspect that is left is another two cells that were also wrongly merged as one cell at frame 3.
+Do the same correction steps (splitting the cell, then correcting the linking) to correct it.</p>
+<h4 id="c2c-correct-wrongly-splitted-cell-by-merging">C2c - Correct wrongly splitted cell by merging</h4>
+<p>The very small cell at frame 3 that we unliked at the previous step seems to be part of the cell above it, wrongly splitted in two cells when looking at the movie.</p>
+<p>To correct that, press <kbd>Control</kbd>&gt; (<kbd>Command</kbd> on MacOS) and at the same time click with the left mouse button from the small cell to its main cell to merge these two cells as one.
+The track should be automatically reconstructed: check that the new merged cell has the correct label at the current frame and at the previous and next frames.</p>
+<h3 id="c3-export-the-skeleton">C3 - Export the skeleton</h3>
+<p>In this tutorial, the goal was to correct the skeleton of the movie.
+For this, you can display it in Epicure by pressing <kbd>k</kbd> and you can save the <code>Skeleton</code> layer that will be added, or directly export it through the <code>Output</code> panel.</p>
+<p>Go to <code>Output</code> panel, select <code>Export segmentations</code> and in that panel, choose <code>skeleton</code> in the parameter <code>Save segmentation as</code>.
+Check that <code>Apply on</code> is set on <code>All cells</code> or set it otherwise.
+This parameter is useful if you want to export only some cell segmentation (one cell, or a group of cell). </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Segment-option/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Segment option">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Segment option
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../api/" class="md-footer__link md-footer__link--next" aria-label="Next: Code documentation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Code documentation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "navigation.expand", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
