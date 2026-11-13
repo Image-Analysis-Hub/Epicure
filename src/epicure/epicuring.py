@@ -257,9 +257,12 @@ class EpiCure:
         self.epi_metadata["Scale bar"] = show_scalebar
         if self.viewer is not None:
             self.viewer.scale_bar.visible = show_scalebar
-            self.viewer.scale_bar.unit = self.epi_metadata["UnitXY"]
+            if not ut.version_napari_above("0.9.4"):
+                self.viewer.scale_bar.unit = self.epi_metadata["UnitXY"]
             for lay in self.viewer.layers:
                 lay.scale = [1, self.epi_metadata["ScaleXY"], self.epi_metadata["ScaleXY"]]
+                if ut.version_napari_above("0.9.3"):
+                    lay.units = self.epi_metadata["UnitXY"]
             self.viewer.reset_view()
 
     def set_scales(self, scalexy, scalet, unitxy, unitt):

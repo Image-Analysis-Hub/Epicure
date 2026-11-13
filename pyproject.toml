@@ -23,7 +23,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Image Processing",
 ]
 dependencies = [
-    "napari[all]<0.9",
+    "napari[all]<0.10.1",
 	"vispy", ## something weird happens between napari and vispy 0.16. Might be fixed soonish and could be removed then
     "numpy",
     "qtpy",
